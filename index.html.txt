@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>🍞的秘密小屋</title>
+</head>
+<style>
+    .lv {
+        color: white;
+        background-color:pink ;
+        width: 100px;
+        height: 30px;
+    }
+
+    h2 {
+        color: palevioletred;
+        text-align: center;
+    }
+
+    body {
+        width: 600px;
+        margin: 0 auto;
+</style>
+
+<body>
+    <h2>世界上最可爱的公主看过来</h2>
+    <img src="222.jpg" /
+         width="500"
+         height="500"
+    >
+    <form>
+        <input id="lv" type=" " value=" ">
+        <input id="btn" class="lv" type="button" value="确认">
+    </form>
+    <p><b>输入下列问题答案：吴勉勉最喜欢什么</b></p>
+</body>
+<script>
+    var button = document.getElementById("btn");
+    button.addEventListener("click", function () {
+        var input = document.getElementById("lv");
+        if (input.value === "金莎"){
+            alert("回答正确，奖励一杯milktea");
+        }else{
+            alert("回答错误，你是谁？");
+        }
+    })
+</script>
+</html>
